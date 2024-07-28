@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/abhaya_libre_extrabold"
+            android:gravity="center"
+            android:text="Ley 1266 del 2008"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/abhaya_libre_extrabold"
+            android:text="“Por la cual se dictan las disposiciones generales del hábeas data y
+se regula el manejo de la información contenida en bases de datos
+personales, en especial la financiera, crediticia, comercial, de
+servicios y la proveniente de terceros países y se dictan otras
+disposiciones”
+DECRETA:
+º. Objeto. La presente ley tiene por objeto desarrollar el
+derecho constitucional que tienen todas las personas a conocer, actualizar y rectificar las informaciones que se hayan recogido sobre
+ellas en bancos de datos , y los demás derechos, libertades y garantías constitucionales relacionadas con la recolección, tratamiento y
+circulación de datos personales a que se refiere el artículo 15 de la
+Constitución Política, así como el derecho a la información establecido en el artículo 20 de la Constitución Política, particularmente en
+relación con la información financiera y crediticia, comercial, de
+servicios y la proveniente de terceros países.
+. Ámbito de aplicación. La presente ley se aplica a todos
+los datos de información personal registrados en un banco de datos,
+sean estos administrados por entidades de naturaleza pública o privada.
+Esta ley se aplicará sin perjuicio de normas especiales que disponen
+la confidencialidad o reserva de ciertos datos o información registrada en bancos de datos de naturaleza pública, para fines estadísticos, de investigación o sanción de delitos o para garantizar el orden
+público.
+Se exceptúan de esta ley las bases de datos que tienen por finalidad
+producir la Inteligencia de Estado por parte del Departamento Administrativo de Seguridad, DAS, y de la Fuerza Pública para garantizar la seguridad nacional interna y externa.
+Los registros públicos a cargo de las cámaras de comercio se regirán
+exclusivamente por las normas y principios consagrados en las normas especiales que las regulan.
+Igualmente, quedan excluidos de la aplicación de la presente ley
+aquellos datos mantenidos en un ámbito exclusivamente personal o
+doméstico y aquellos que circulan internamente, esto es, que no se
+suministran a otras personas jurídicas o naturales.
+"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/acepptBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:backgroundTint="#0C4B17"
+                android:clickable="true"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:text="Accept"
+                android:textColorHighlight="#1E4A20"
+                android:textColorLink="#1C4C1E"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+    </ScrollView>

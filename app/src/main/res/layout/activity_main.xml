@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="195dp"
+        android:layout_height="42dp"
+        android:autoText="false"
+        android:backgroundTint="#00FFFFFF"
+        android:drawableTint="#00FFFFFF"
+        android:ems="10"
+        android:hint="your email here"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="167dp"
+        android:layout_height="39dp"
+        android:autoText="false"
+        android:backgroundTint="#00FFFFFF"
+        android:drawableTint="#00FFFFFF"
+        android:ems="10"
+        android:hint="your password here"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="343dp"
+        android:layout_height="280dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.914">
+
+        <ImageButton
+            android:id="@+id/googlebot"
+            android:layout_width="264dp"
+            android:layout_height="62dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#00FFFFFF"
+            android:clickable="true"
+            android:contentDescription="Inicio con Google"
+            android:src="@drawable/google"
+            tools:src="@drawable/google" />
+
+        <Button
+            android:id="@+id/buttonLog"
+            android:layout_width="245dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="#0C4B17"
+            android:clickable="true"
+            android:fontFamily="@font/inter_bold"
+            android:text="Log in "
+            android:textColorHighlight="#1E4A20"
+            android:textColorLink="#1C4C1E"
+            android:textSize="20sp"
+            app:cornerRadius="10dp" />
+
+        <TextView
+            android:id="@+id/createAcclink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:fontFamily="@font/inter_bold"
+            android:text="Don't you have an account? Click here"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/recPassw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contextClickable="true"
+            android:fontFamily="@font/inter_bold"
+            android:text="Did you forget your password?"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

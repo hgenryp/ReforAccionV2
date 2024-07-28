@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frame20"
+    tools:context=".VerifyEmail">
+
+
+    <Button
+        android:id="@+id/enterCode"
+        android:layout_width="203dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#0C4B17"
+        android:clickable="true"
+        android:fontFamily="@font/inter_bold"
+        android:text="Enter code"
+        android:textColorHighlight="#1E4A20"
+        android:textColorLink="#1C4C1E"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.867" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="199dp"
+        android:layout_height="35dp"
+        android:background="#6D9A74"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Code of verification"
+        android:inputType="number"
+        android:textColor="#F3EEEE"
+        android:textColorHint="#F4EFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.684" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="211dp"
+        android:layout_height="27dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Didn't you get it? Send it again"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.768" />
+
+    <LinearLayout
+        android:layout_width="202dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939">
+
+        <ImageButton
+            android:id="@+id/emailBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="#00FFFFFF"
+            android:clickable="true"
+            android:src="@android:drawable/btn_star"
+            tools:src="@drawable/gmail" />
+
+        <ImageButton
+            android:id="@+id/hotmailBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:src="@android:drawable/btn_star"
+            tools:src="@drawable/hotmail" />
+    </LinearLayout>
+
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>
