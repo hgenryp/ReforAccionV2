@@ -1,3 +1,44 @@
 <resources>
     <string name="app_name">ReforAccion</string>
+
+    <string name="palma_info">
+         &#8226; Founded in 1985 as nationaltree.
+        \n&#8226; It can be found in the humid forests of the Andean region.
+        \n&#8226; The wax palm can live up to 200 years.
+        \n&#8226; Currently, only around 2,000 trees remain.
+        \n&#8226; The wax palm is characterized by its shiny trunk, bathed in wax, with green druples in the form of clusters as fruit.
+    </string>
+
+    <string name="siete_info">
+         &#8226; It can reach a height of 10 meters.
+        \n&#8226; It can be found in Chocó, Antioquia, Putumayo, Boyacá and Santander, among others. They tend to grow more in humid areas.
+        \n&#8226; It is found from Venezuela to Peru and its lifespan is estimated to be approximately 60 years.
+    </string>
+
+    <string name="guayacan_info">
+         &#8226; It can reach 30 meters, this tree stands out among all for its bright shades of yellow, which usually flood the streets of towns and cities in the country when the flowers bloom.
+        \n&#8226; It is species native to America, which usually grows in the territory between Mexico and Ecuador.
+        \n&#8226; It growa at heights from sea level to 2,600 meters above sea level and can grow up to five meters"
+    </string>
+
+    <string name="roble_info">
+         &#8226; Some indigenous communities attribute medicinal properties to its bark.
+        \n&#8226; In Colombia there are two types of oaks: white and black, the latter being exclusive to America.
+        \n&#8226; The tree can exceed 50 meters in height.
+        \n&#8226; Can live for more than 200 years."
+    </string>
+
+    <string name="nogal_info">
+         &#8226; It is found, above all, in Central and South America.
+        \n&#8226; It is well known for the quality of its wood and because its fruit contains a very dyed brown paint, which can even be used to mark fabrics.
+        \n&#8226; It can produce up to 5 millon flowers annually. The nut it releases usually attractsrodents that enrich the ecosystems around it.
+        \n&#8226; Only in the Colombian capital there is a record of 7,570 trees of the walnut species.\n
+    </string>
+
+    <string name="ceiba_info">
+         &#8226; The only place on the planet where specimens of this species can be found is in the Chicamocha Rivr Canyon, in Santander.
+            \n&#8226; Most of these trees are over 100 years old.
+            \n&#8226; They are on the verge of extinction for two main reason: \n first, the animalsthat frequent the cayon usually eat the seeds that fall from it, preventing their naural regeneration,\n
+        and second the increase in the agricultural frontier that leads their deforestation.\n
+    </string>
 </resources>

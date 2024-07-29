@@ -21,7 +21,9 @@ public class Species extends AppCompatActivity {
         setContentView(R.layout.activity_species);
 
         ImageButton meanMenu = findViewById(R.id.meanMenu);
-        ImageButton backButton = findViewById(R.id.imagesingout);
+        ImageButton animalBtn = findViewById(R.id.dangeranimal);
+        ImageButton tipsBtn = findViewById(R.id.tipsrecom);
+        ImageButton exitButton = findViewById(R.id.imagesingout);
         ImageButton fichaBtn = findViewById(R.id.libraryTree);
 
         meanMenu.setOnClickListener(new View.OnClickListener() {
@@ -32,7 +34,7 @@ public class Species extends AppCompatActivity {
             }
         });
 
-        backButton.setOnClickListener(new View.OnClickListener() {
+        exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
@@ -46,6 +48,22 @@ public class Species extends AppCompatActivity {
                 String url = "https://www.reddearboles.org/ficha-tecnica";
                 Uri uri = Uri.parse(url);
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
+
+        animalBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Animals.class);
+                startActivity(intent);
+            }
+        });
+
+        tipsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Recomendacion.class);
                 startActivity(intent);
             }
         });
