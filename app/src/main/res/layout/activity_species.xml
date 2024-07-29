@@ -11,6 +11,7 @@
         android:id="@+id/textView7"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="81dp"
         android:text="MAIN NATIVE AND EMBLEMATIC TREES FROM COLOMBIA"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -18,7 +19,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="109dp" />
+        app:layout_constraintTop_toTopOf="@+id/textView" />
 
     <ImageButton
         android:id="@+id/meanMenu"
@@ -46,7 +47,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.041" />
@@ -106,5 +107,66 @@
             android:clickable="true"
             app:srcCompat="@drawable/recomedn" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnRoble"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/roble_andino"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSiete" />
+
+    <ImageView
+        android:id="@+id/btnGuayacan"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/guayacan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPalma" />
+
+    <ImageView
+        android:id="@+id/btnSiete"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/sietecueros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnPalma"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="216dp"
+        android:src="@drawable/palma_cera"
+        app:layout_constraintEnd_toStartOf="@+id/btnSiete"
+        app:layout_constraintHorizontal_bias="0.328"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnNogal"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/nogal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuayacan" />
+
+    <ImageView
+        android:id="@+id/btnCeiba"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:src="@drawable/ceiba"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRoble" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

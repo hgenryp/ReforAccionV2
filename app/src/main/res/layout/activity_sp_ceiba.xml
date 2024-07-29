@@ -5,13 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SpRoble">
+    tools:context=".SpCeiba">
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Roble"
-        tools:layout_editor_absoluteX="190dp"
-        tools:layout_editor_absoluteY="173dp" />
+        android:text="Ceiba"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="224dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,4 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".SpNogal">
 
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nogal"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="205dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
