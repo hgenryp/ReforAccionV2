@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondog"
+    tools:context=".Dates">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="354dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974">
+
+        <ImageButton
+            android:id="@+id/libraryTree"
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#00FFFFFF"
+            android:clickable="true"
+            android:src="@drawable/library"
+            tools:src="@drawable/library" />
+
+        <ImageButton
+            android:id="@+id/dangeranimal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="#00FFFFFF"
+            android:clickable="true"
+            android:src="@drawable/danganimal"
+            tools:srcCompat="@drawable/danganimal" />
+
+        <ImageButton
+            android:id="@+id/tipsrecom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="#00FFFFFF"
+            android:clickable="true"
+            app:srcCompat="@drawable/recomedn" />
+
+        <ImageButton
+            android:id="@+id/comunityblog"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="#00FFFFFF"
+            android:clickable="true"
+            app:srcCompat="@drawable/comunity"
+            tools:srcCompat="@drawable/comunity" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/meanMenu"
+        android:layout_width="78dp"
+        android:layout_height="71dp"
+        android:backgroundTint="#00FFFFFF"
+        android:clickable="true"
+        android:src="@drawable/meanmenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032"
+        tools:src="@drawable/meanmenu" />
+
+    <ImageButton
+        android:id="@+id/imagesingout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:clickable="true"
+        android:src="@drawable/singout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="208dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/abhaya_libre_extrabold"
+        android:text="DATES"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="350dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/grafica" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="346dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/estadistica" />
+</androidx.constraintlayout.widget.ConstraintLayout>

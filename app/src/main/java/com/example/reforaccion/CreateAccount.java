@@ -29,7 +29,7 @@ public class CreateAccount extends AppCompatActivity {
         buttonCreate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), VerifyEmail.class);
+                Intent intent = new Intent(getApplicationContext(), Politicas.class);
                 startActivity(intent);
             }
         });

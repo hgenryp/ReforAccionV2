@@ -4,23 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/activitiesimag"
-    tools:context=".Activities">
-
-    <ImageButton
-        android:id="@+id/meanMenu"
-        android:layout_width="78dp"
-        android:layout_height="71dp"
-        android:backgroundTint="#00FFFFFF"
-        android:clickable="true"
-        android:src="@drawable/meanmenu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.089"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.032"
-        tools:src="@drawable/meanmenu" />
+    android:background="@drawable/fondog"
+    tools:context=".Areas">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -71,6 +56,21 @@
     </LinearLayout>
 
     <ImageButton
+        android:id="@+id/meanMenu"
+        android:layout_width="78dp"
+        android:layout_height="71dp"
+        android:backgroundTint="#00FFFFFF"
+        android:clickable="true"
+        android:src="@drawable/meanmenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032"
+        tools:src="@drawable/meanmenu" />
+
+    <ImageButton
         android:id="@+id/imagesingout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -84,102 +84,69 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.052" />
 
-
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="208dp"
-        android:layout_height="56dp"
+        android:layout_width="209dp"
+        android:layout_height="84dp"
         android:fontFamily="@font/abhaya_libre_extrabold"
-        android:text="ACTIVITIES"
+        android:text="PLANT\nAREAS"
+        android:textAlignment="center"
         android:textColor="#0E0E0E"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.053" />
+        app:layout_constraintVertical_bias="0.032" />
 
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="182dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="156dp"
-        android:ems="10"
-        android:inputType="date"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView10"
+    <TextView
+        android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="136dp"
+        android:text="BOGOTÁ CITY"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/date" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView11"
+    <TextView
+        android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="516dp"
+        android:layout_marginTop="12dp"
+        android:text="COLOMBIA"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/sitio" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="140dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="220dp"
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="222dp"
+        android:layout_height="219dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/mapa" />
 
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="308dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="348dp"
-        android:ems="10"
-        android:inputType="text"
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="650dp"
-        android:backgroundTint="#0C4B17"
-        android:text="Register"
-        android:textSize="18dp"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.518"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="650dp"
-        android:layout_marginEnd="52dp"
-        android:backgroundTint="#0C4B17"
-        android:text="Shared"
-        android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:srcCompat="@drawable/siembras" />
 </androidx.constraintlayout.widget.ConstraintLayout>

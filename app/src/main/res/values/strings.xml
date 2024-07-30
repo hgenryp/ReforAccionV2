@@ -55,4 +55,11 @@
         \nRemember to plant native trees, since invasive trees can generate a greater negative impact on the natural environment, which could cause greater drought and prevent the restoration of the environment.\n
     </string>
 
+    <string name="tipo_info">Tipo de actividad:</string>
+    <string-array name="tipo_actividad">
+        <item>Caminata</item>
+        <item>Siembra</item>
+        <item>Charla</item>
+    </string-array>
+
 </resources>

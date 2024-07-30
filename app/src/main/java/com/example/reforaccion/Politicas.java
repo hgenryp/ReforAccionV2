@@ -19,7 +19,7 @@ public class Politicas extends AppCompatActivity {
         accepBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), CreateAccount.class);
+                Intent intent = new Intent(getApplicationContext(), VerifyEmail.class);
                 startActivity(intent);
             }
         });

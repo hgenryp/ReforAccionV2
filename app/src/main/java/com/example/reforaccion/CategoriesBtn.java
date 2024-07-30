@@ -23,6 +23,24 @@ public class CategoriesBtn extends AppCompatActivity {
         Button eventBtncate = findViewById(R.id.eventBtncate);
         Button specieBtn = findViewById(R.id.button);
         Button activitiesBtn = findViewById(R.id.activitiesBtn);
+        Button datesBtn = findViewById(R.id.button4);
+        Button areasBtn = findViewById(R.id.button5);
+
+        datesBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Dates.class);
+                startActivity(intent);
+            }
+        });
+
+        areasBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Areas.class);
+                startActivity(intent);
+            }
+        });
 
         activitiesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
