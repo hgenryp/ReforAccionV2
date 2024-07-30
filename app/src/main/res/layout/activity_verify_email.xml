@@ -7,7 +7,6 @@
     android:background="@drawable/frame20"
     tools:context=".VerifyEmail">
 
-
     <Button
         android:id="@+id/enterCode"
         android:layout_width="203dp"
@@ -50,6 +49,7 @@
         android:layout_height="27dp"
         android:fontFamily="@font/inter_bold"
         android:text="Didn't you get it? Send it again"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.533"
@@ -73,21 +73,21 @@
 
         <ImageButton
             android:id="@+id/emailBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="98dp"
+            android:layout_height="94dp"
             android:backgroundTint="#00FFFFFF"
             android:clickable="true"
-            android:src="@android:drawable/btn_star"
+            android:src="@drawable/gmail"
             tools:src="@drawable/gmail" />
 
         <ImageButton
             android:id="@+id/hotmailBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="98dp"
+            android:layout_height="94dp"
+            android:backgroundTint="#00FFFFFF"
             android:clickable="true"
-            android:src="@android:drawable/btn_star"
+            android:src="@drawable/hotmail"
             tools:src="@drawable/hotmail" />
     </LinearLayout>
 
-    />
 </androidx.constraintlayout.widget.ConstraintLayout>

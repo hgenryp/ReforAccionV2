@@ -36,9 +36,23 @@
     </string>
 
     <string name="ceiba_info">
-         &#8226; The only place on the planet where specimens of this species can be found is in the Chicamocha Rivr Canyon, in Santander.
-            \n&#8226; Most of these trees are over 100 years old.
-            \n&#8226; They are on the verge of extinction for two main reason: \n first, the animalsthat frequent the cayon usually eat the seeds that fall from it, preventing their naural regeneration,\n
+        &#8226; The only place on the planet where specimens of this species can be found is in the Chicamocha Rivr Canyon, in Santander.
+        \n&#8226; Most of these trees are over 100 years old.
+        \n&#8226; They are on the verge of extinction for two main reason: \n first, the animalsthat frequent the cayon usually eat the seeds that fall from it, preventing their naural regeneration,\n
         and second the increase in the agricultural frontier that leads their deforestation.\n
     </string>
+
+    <string name="tips_info">
+        &#8226; The best time to plant is in fall or early spring.
+        \n&#8226; Prepare the Soil Surface
+        \n&#8226; Dig a hole at least twice the width and depth of the tree\s root ball.
+        \n&#8226; Fill the Bottom of the Hole with Compost.
+        \n&#8226; Remove the Plant from the Pot
+        \n&#8226; Place the Plant in the Center of the Hole
+        \n&#8226; Fill the space around the plant with a mixture of compost and soil.
+        \n&#8226; Add a little granular fertilizer, but don\'t overdo it to avoid burning the roots.
+        \n&#8226; Give the tree a generous watering, about a gallon of water.\n
+        \nRemember to plant native trees, since invasive trees can generate a greater negative impact on the natural environment, which could cause greater drought and prevent the restoration of the environment.\n
+    </string>
+
 </resources>
