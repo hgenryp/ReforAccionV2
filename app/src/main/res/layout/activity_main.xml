@@ -25,25 +25,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.406" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="167dp"
-        android:layout_height="39dp"
-        android:autoText="false"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableTint="#00FFFFFF"
-        android:ems="10"
-        android:hint="your password here"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.69"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
-        android:layout_width="343dp"
-        android:layout_height="280dp"
+        android:layout_width="331dp"
+        android:layout_height="213dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -99,5 +83,35 @@
             android:textStyle="bold" />
 
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="407dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="397dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="2dp">
+
+        <EditText
+            android:id="@+id/editTextTextPassword3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="162dp"
+            android:layout_marginEnd="75dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="309dp"
+            android:layout_marginEnd="37dp"
+            android:background="#0AFFFFFF"
+            android:src="@drawable/baseline_visibility_off_24" />
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
