@@ -42,8 +42,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="341dp"
-        android:layout_height="234dp"
+        android:layout_width="343dp"
+        android:layout_height="280dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -99,35 +99,5 @@
             android:textStyle="bold" />
 
     </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="409dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="396dp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp">
-
-        <EditText
-            android:id="@+id/editTextTextPassword4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="97dp"
-            android:layout_marginEnd="103dp"
-            android:ems="10"
-            android:inputType="textPassword" />
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="296dp"
-            android:layout_marginEnd="57dp"
-            android:background="#00FFFFFF"
-            app:srcCompat="@drawable/baseline_visibility_off_24" />
-    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
