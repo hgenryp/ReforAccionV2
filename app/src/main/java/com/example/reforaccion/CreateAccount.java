@@ -9,7 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.RadioButton;
 import android.widget.TextView;
+
+import com.example.reforaccion.helper.validation;
 
 public class CreateAccount extends AppCompatActivity {
 
@@ -18,8 +21,14 @@ public class CreateAccount extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
 
+        // Sección de estilo de botones
         Button buttonCreate = findViewById(R.id.buttonCreate);
-        TextView termsC= findViewById(R.id.termsC);
+        TextView termsC = findViewById(R.id.termsC);
+        EditText NombreUser = findViewById(R.id.editNombreUser);
+        TextView errorUser = findViewById(R.id.errorUser);
+        EditText emailText = findViewById(R.id.emailText);
+        EditText editTelefono = findViewById(R.id.editTelefono);
+        RadioButton radioButton = findViewById(R.id.radioButton);
         EditText passwordEditText1 = findViewById(R.id.editTextTextPassword5);
         EditText passwordEditText2 = findViewById(R.id.editTextTextPassword4);
         ImageButton togglePasswordVisibilityButton1 = findViewById(R.id.imageButton3);
@@ -69,6 +78,12 @@ public class CreateAccount extends AppCompatActivity {
                 // Mueve el cursor al final del texto
                 passwordEditText2.setSelection(passwordEditText2.getText().length());
             }
+        });
+
+        //Seccion de gestión de datos
+        buttonCreate.setOnClickListener(viwe -> {
+            validation.validarEditText(NombreUser, errorUser, "nombre", 8, 25, this);
+            validation.validarEditText(emailText, errorUser, "email", 8, 20, this);
         });
     }
 }

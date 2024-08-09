@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:buttonTint="#100D0D"
         android:buttonTintMode="multiply"
-        android:checked="true"
+        android:checked="false"
         android:clickable="true"
         android:fadeScrollbars="false"
         android:text="Acept terms and conditions"
@@ -74,7 +74,7 @@
         app:layout_constraintVertical_bias="0.44">
 
         <EditText
-            android:id="@+id/NameTextUser"
+            android:id="@+id/editNombreUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -83,7 +83,7 @@
             android:ems="10"
             android:gravity="center"
             android:hint="Tap your name"
-            android:inputType="text" />
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/emailText"
@@ -96,10 +96,10 @@
             android:ems="10"
             android:gravity="center"
             android:hint="Tap your email"
-            android:inputType="text" />
+            android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/editTelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -137,7 +137,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="48dp"
+            android:layout_marginEnd="64dp"
             android:background="#00FFFFFF"
             app:srcCompat="@drawable/baseline_visibility_off_24" />
     </RelativeLayout>
@@ -165,9 +165,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="48dp"
+            android:layout_marginEnd="64dp"
             android:background="#00FFFFFF"
             app:srcCompat="@drawable/baseline_visibility_off_24" />
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/errorUser"
+        android:layout_width="265dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="335dp"
+        android:textAlignment="gravity"
+        android:textColor="#F20A0A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/errorEmail"
+        android:layout_width="265dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="380dp"
+        android:textAlignment="gravity"
+        android:textColor="#F20A0A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
