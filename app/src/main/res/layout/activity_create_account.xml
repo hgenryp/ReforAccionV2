@@ -63,12 +63,12 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="195dp"
-        android:layout_height="184dp"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.44">
@@ -77,7 +77,7 @@
             android:id="@+id/editNombreUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="85dp"
             android:backgroundTint="#00FFFFFF"
             android:drawableTint="#00FFFFFF"
             android:ems="10"
@@ -85,12 +85,18 @@
             android:hint="Tap your name"
             android:inputType="textPersonName" />
 
+        <TextView
+            android:id="@+id/errorUser"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#F00A0A" />
+
         <EditText
             android:id="@+id/emailText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="85dp"
             android:backgroundTint="#00FFFFFF"
             android:drawableTint="#00FFFFFF"
             android:ems="10"
@@ -98,18 +104,31 @@
             android:hint="Tap your email"
             android:inputType="textEmailAddress" />
 
+        <TextView
+            android:id="@+id/errorEmail"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#F20B0B" />
+
         <EditText
             android:id="@+id/editTelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="85dp"
             android:backgroundTint="#00FFFFFF"
             android:drawableTint="#00FFFFFF"
             android:ems="10"
             android:gravity="center"
             android:hint="Tap your phone"
             android:inputType="number" />
+
+        <TextView
+            android:id="@+id/errorTele"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#F20B0B"/>
 
     </LinearLayout>
 
@@ -169,29 +188,5 @@
             android:background="#00FFFFFF"
             app:srcCompat="@drawable/baseline_visibility_off_24" />
     </RelativeLayout>
-
-    <TextView
-        android:id="@+id/errorUser"
-        android:layout_width="265dp"
-        android:layout_height="17dp"
-        android:layout_marginStart="-10dp"
-        android:layout_marginTop="335dp"
-        android:textAlignment="gravity"
-        android:textColor="#F20A0A"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/errorEmail"
-        android:layout_width="265dp"
-        android:layout_height="17dp"
-        android:layout_marginStart="-10dp"
-        android:layout_marginTop="380dp"
-        android:textAlignment="gravity"
-        android:textColor="#F20A0A"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

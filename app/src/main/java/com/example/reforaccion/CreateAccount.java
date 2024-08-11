@@ -27,7 +27,9 @@ public class CreateAccount extends AppCompatActivity {
         EditText NombreUser = findViewById(R.id.editNombreUser);
         TextView errorUser = findViewById(R.id.errorUser);
         EditText emailText = findViewById(R.id.emailText);
+        TextView errorEmail = findViewById(R.id.errorEmail);
         EditText editTelefono = findViewById(R.id.editTelefono);
+        TextView errorTele = findViewById(R.id.errorTele);
         RadioButton radioButton = findViewById(R.id.radioButton);
         EditText passwordEditText1 = findViewById(R.id.editTextTextPassword5);
         EditText passwordEditText2 = findViewById(R.id.editTextTextPassword4);
@@ -82,8 +84,9 @@ public class CreateAccount extends AppCompatActivity {
 
         //Seccion de gestión de datos
         buttonCreate.setOnClickListener(viwe -> {
-            validation.validarEditText(NombreUser, errorUser, "nombre", 8, 25, this);
-            validation.validarEditText(emailText, errorUser, "email", 8, 20, this);
+            validation.validarEditText(NombreUser, errorUser, "nombre", 4, 25, this);
+            validation.validarEmail(emailText, errorEmail, this);
+            validation.validarTelefono(editTelefono, "telefono", 8, 10, errorTele, this);
         });
     }
 }
