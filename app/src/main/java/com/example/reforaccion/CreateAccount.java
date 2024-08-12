@@ -32,7 +32,9 @@ public class CreateAccount extends AppCompatActivity {
         TextView errorTele = findViewById(R.id.errorTele);
         RadioButton radioButton = findViewById(R.id.radioButton);
         EditText passwordEditText1 = findViewById(R.id.editTextTextPassword5);
+        TextView errorPass = findViewById(R.id.errorPass);
         EditText passwordEditText2 = findViewById(R.id.editTextTextPassword4);
+        TextView errorPass2 = findViewById(R.id.errorPass2);
         ImageButton togglePasswordVisibilityButton1 = findViewById(R.id.imageButton3);
         ImageButton togglePasswordVisibilityButton2 = findViewById(R.id.imageButton2);
 
@@ -87,6 +89,7 @@ public class CreateAccount extends AppCompatActivity {
             validation.validarEditText(NombreUser, errorUser, "nombre", 4, 25, this);
             validation.validarEmail(emailText, errorEmail, this);
             validation.validarTelefono(editTelefono, "telefono", 8, 10, errorTele, this);
+            validation.validarPassword(passwordEditText1, passwordEditText2, errorPass, errorPass2, "contraseña", 8, 20, this);
         });
     }
 }

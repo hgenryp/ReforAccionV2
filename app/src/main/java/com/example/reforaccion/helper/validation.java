@@ -73,6 +73,42 @@ public class validation {
             errorTextView.setVisibility(TextView.VISIBLE);
             return;
         }
+    }
 
+    public static void validarPassword(
+            EditText editPassword,
+            EditText editPassword2,
+            TextView errorTextView,
+            TextView errorTextView2,
+            String password, int min, int max, Context context) {
+
+        String pass = editPassword.getText().toString();
+        String pass2 = editPassword2.getText().toString();
+        String mensaje = "";
+        if (pass.isEmpty()) {
+            mensaje = "El campo " + password + " no puede estar vacío";
+            Toast.makeText(context, mensaje, Toast.LENGTH_SHORT).show();
+            errorTextView.setText(mensaje);
+            errorTextView.setVisibility(TextView.VISIBLE);
+            errorTextView2.setText(mensaje);
+            errorTextView2.setVisibility(TextView.VISIBLE);
+            return;
+        }
+        if (pass.length() < min || pass.length() > max) {
+            mensaje = "El campo " + password + " debe tener entre " + min + " y " + max + " caracteres";
+            errorTextView.setText(mensaje);
+            errorTextView.setVisibility(TextView.VISIBLE);
+            errorTextView2.setText(mensaje);
+            errorTextView2.setVisibility(TextView.VISIBLE);
+            return;
+        }
+        if (!pass.equals(pass2)) {
+            mensaje = "Las contraseñas no coinciden";
+            errorTextView.setText(mensaje);
+            errorTextView.setVisibility(TextView.VISIBLE);
+            errorTextView2.setText(mensaje);
+            errorTextView2.setVisibility(TextView.VISIBLE);
+            return;
+        }
     }
 }
