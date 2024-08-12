@@ -1,10 +1,12 @@
 package com.example.reforaccion.models;
 
-public class User {
+import android.app.Application;
+
+public class User extends Application {
     private String nombre;
-    private String email;
+    public String email;
     private String telefono;
-    private String password;
+    public String password;
 
     public User() {
         this.nombre = "";
